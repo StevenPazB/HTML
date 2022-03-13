@@ -1,0 +1,167 @@
+<!DOCTYPE html> <!--Type of document specified as HTML-->
+<html lang="en"> <!--Root structure, lang is language ("en","es",etc.)-->
+<head> <!--Browser reads here first (metadata[coockies,scripts,etc.])-->
+    <meta charset="UTF-8"> <!--Metadata (data of data). "charset"=types of characters used-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Equivalence-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--How it is going to be displayed, "initial-scale"=zoom-->
+    <title>BakeStar-Employee</title> <!--Title of our project-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        /* Header style */
+        header {
+            width: 100%;
+            background-color: #ffde59;
+            padding: 0px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        h2{
+            text-align: center;
+        }
+        h3 {
+            text-align: left;
+        }
+
+        /*Table*/
+        table,th,td {
+            border: 5px solid;
+            block-size: 40px;
+            tab-size: 50px;
+            text-align: center;
+            width: 50;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 20%;
+            height: 500px;
+            background-color: rgb(228, 202, 86);
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        nav ul li a { 
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 18px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #8d784b;
+            height: 500px;
+            color: white;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+
+</head>
+<body> <!--These are tags-->
+    <header>
+        <img src="https://user-images.githubusercontent.com/99289617/158068099-3a74564d-8c49-4f23-b92c-10795e770e63.png" alt="Bakestar" height="280" width="auto"><!--With "./" I say that is in the same carpet where the code is-->
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Amount.html">Fuel, matter, etc. (flavours)</a></li><br>
+                <li><a href="Decoration.html">Material, Biosphere (decoration)</a></li><br>
+                <li><a href="Orders_to_baker.html">Orders</a></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li><a href="index.html">MENU</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Orders</h2>
+            <table style="margin: 0 auto">
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Cake
+                        <table>
+                            <td>Spetial</td>
+                            <td>From list</td>
+                        </table>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Pancho Gomez</td>
+                    <td>1234567890</td>
+                    <td>paco.gomez.tutu@something.com</td>
+                    <td>-</td>
+                    <td>Galaxy cake</td>
+                </tr>
+                <tr>
+                    <td>Julieta Tapia</td>
+                    <td>1234555440</td>
+                    <td>julieta.t@something.com</td>
+                    <td>Av........</td>
+                    <td>Spetial</td>
+                </tr>
+            </table>
+
+            <h3>IMPORTANT
+                <P>For spetial cakes, analyze and contact the client to say if it is possible or offer other options.</P>
+            </h3>
+            
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Contact information: <br>
+        Address: To be determined <br>
+        Phone: 1234567890 <br>
+        Available from 8:00 to 20:00 hours
+        </p>
+    </footer>
+
+    
+</body>
+</html>

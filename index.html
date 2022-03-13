@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!--Type of document specified as HTML-->
+<html lang="en"> <!--Root structure, lang is language ("en","es",etc.)-->
+<head> <!--Browser reads here first (metadata[coockies,scripts,etc.])-->
+    <meta charset="UTF-8"> <!--Metadata (data of data). "charset"=types of characters used-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Equivalence-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--How it is going to be displayed, "initial-scale"=zoom-->
+    <title>BakeStar</title> <!--Title of our project-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        /* Header style */
+        header {
+            width: 100%;
+            background-color: #ffde59;
+            padding: 0px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 20%;
+            height: 500px;
+            background-color: rgb(228, 202, 86);
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        nav ul li a { 
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 18px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #8d784b;
+            height: 500px;
+            color: white;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+
+</head>
+<body> <!--These are tags-->
+    <header>
+        <img src="https://user-images.githubusercontent.com/99289617/158068099-3a74564d-8c49-4f23-b92c-10795e770e63.png" alt="Bakestar" height="280" width="auto"><!--With "./" I say that is in the same carpet where the code is-->
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">MENU</a></li><br>
+                <li><a href="Create_your_cake.html">Create, imagine and make it happen</a></li><br>
+                <li><a href="Complements.html">Complements</a></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li><a href="Amount.html">Baker section</a></li><br>
+                <a href="./Order.html">
+                    <!--We can also write "<button>Submit Order</button>" is beeter if you want to stylish-->
+                    <input type="button" value="Want to start your journey?">
+                </a>
+            </ul>
+        </nav>
+
+        <article>
+            <h3>Welcome to the solar system factory</h3>
+            <ul>
+                <dl>
+                    <li>Galactic cake-------320$</li>
+                    <dd>(all falvours)</dd><br>
+                    <li>Earth cake----------320$</li>
+                    <dd>(Chocolate)</dd><br>
+                    <li>Venus cake----------320$</li>
+                    <dd>(orange flavour)</dd><br>
+                    <li>Neptune cake--------320$</li>
+                    <dd>(Blueberry flavour)</dd><br>
+                    <li>Jupiter cake--------320$</li>
+                    <dd>(Banana flavour)</dd><br>
+                    <li>Sun cake------------320$</li>
+                    <dd>(Vanilla, Banana and caramel)</dd>
+                </dl>
+            </ul>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Contact information: <br>
+        Address: To be determined <br>
+        Phone: 1234567890 <br>
+        Available from 8:00 to 20:00 hours
+        </p>
+    </footer>
+
+    
+</body>
+</html>

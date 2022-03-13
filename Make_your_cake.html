@@ -1,0 +1,146 @@
+<!DOCTYPE html> <!--Type of document specified as HTML-->
+<html lang="en"> <!--Root structure, lang is language ("en","es",etc.)-->
+<head> <!--Browser reads here first (metadata[coockies,scripts,etc.])-->
+    <meta charset="UTF-8"> <!--Metadata (data of data). "charset"=types of characters used-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Equivalence-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--How it is going to be displayed, "initial-scale"=zoom-->
+    <title>BakeStar-Create</title> <!--Title of our project-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        /* Header style */
+        header {
+            width: 100%;
+            background-color: #ffde59;
+            padding: 0px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: rgb(228, 202, 86);
+            height: 600px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        nav ul li a { 
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 18px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #8d784b;
+            height: 600px;
+            color: white;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+
+</head>
+<body> <!--These are tags-->
+    <header>
+        <img src="https://user-images.githubusercontent.com/99289617/158068099-3a74564d-8c49-4f23-b92c-10795e770e63.png" alt="Bakestar" height="280" width="auto"><!--With "./" I say that is in the same carpet where the code is-->
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Order.html">Make your order</a></li><br>
+                <li><a href="#">Pay</a></li><br>
+                <li><a href="#">Check your order</a></li><br>
+                <li><a href="Order.html">Go to Station "Ready!"</a></li><br>
+                <li><a href="index.html">Go to menu</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Station "Imagine!": Build your rocket, create your planet. There is no limit!</h1>
+            <form action="pedido.js">
+                <label for="Nombre">Astronaut Name</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br><br> <!-- Placeholder indicates in the text box what to write -->
+
+                <label for="mail1">Astronaut email</label>
+                <input type="text" name="mail1" id="mail1" placeholder="Email"><br><br> 
+
+                <label for="rocket">In case of rocket delay, give us your phone number</label>
+                <input type="text" name="rocket" id="rocket" placeholder="Phone number"><br><br>
+        
+                <p>You want us to deliver the cake to your galaxy?</p>
+                <input type="radio" name="choose" id="to_go" value="To_go"> 
+                <label for="to_go">Yes</label><br>
+                <ol>
+                    <label for="address">Type your galaxy address please</label>
+                    <input type="text" name="address" id="address" placeholder="Galaxy address">
+                </ol>
+                <input type="radio" name="choose" id="here" value="Here">
+                <label for="here">No</label><br><br>
+        
+                <h2>Make your cake!</h2>
+                <label for="make">What came yo your mind ?!</label>
+                <input type="text" name="make" id="make" placeholder="Tell us">
+        
+                <input type="reset" value="Reset"><br><br> <!-- In this part the "value" is what is written inside the button -->
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+
+        <footer>
+            <p>Contact information: <br>
+            Address: To be determined <br>
+            Phone: 1234567890 <br>
+            Available from 8:00 to 20:00 hours
+            </p>
+        </footer>
+
+    </section>
+
+</body>
+</html>
